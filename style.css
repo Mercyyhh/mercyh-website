@@ -1,3 +1,26 @@
+@font-face {
+  font-family: "Jetbrains";
+  src: url('fonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: "Jetbrains Mono";
+  font-family: Jetbrains;
+  color: #f0dcb2;
+  background-color: #272626;
+}
+
+a {
+  text-decoration: none;
+  color: #f0dcb2;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #f0dcb2;
+}
+
+a:hover {
+  text-decoration: underline;
 }
