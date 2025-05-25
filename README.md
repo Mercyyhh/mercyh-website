@@ -1,6 +1,6 @@
 # Simple Portfolio/Blog (Hobby project)
 
-Live @ [**mercyh.online**](www.mercyh.online)
+Live @ [**mercyh.online**](mercyh.online)
 
 currently learning Javascript and react. 
 i'm trying not to put too much in there before i migrate it to react.
