@@ -9,46 +9,45 @@ body {
   font-family: Jetbrains;
   color: #f0dcb2;
   background-color: #272626;
-  margin: 0;
-  text-align: center;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 2rem;
+.container-outline,
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-nav {
-  margin-top: 0.5rem;
+.container {
+  width: 1000px;
+  height: 500px;
+  background-color: #171616;
+  border-radius: 49px;
 }
 
-nav a {
-  margin: 0 0.5rem;
-  text-decoration: none;
-  color: #f0dcb2;
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
-nav a:visited {
-  text-decoration: none;
-  color: #f0dcb2;
+.container-outline {
+  --angle: 0deg;
+  width: 1000px;
+  height: 500px;
+  padding: 3px;
+  border-radius: 50px;
+  background-image: conic-gradient(from var(--angle), #438687, #0e9ad5, #ce261d, #f4ed2a, #438687);
+  animation: 3s spin linear infinite;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-.greeting {
-  padding: 10vh 2rem;
-}
-
-footer {
-  padding: 2rem;
-  font-size: 0.9rem;
-}
-
-.highlight {
-  color: #ce261d;
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
 }
 
