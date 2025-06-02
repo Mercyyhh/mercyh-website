@@ -77,20 +77,35 @@ body {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    height: auto;
+    height: 100%;
     min-height: 0;/* Let it grow naturally */
     width: 100%; /* Optional: better for responsiveness */
-    padding: 15px;
   }
 
   .blog {
-/*    flex: none; /* Optional, if it acts weird */
-/*    width: 100%;  Optional */
+    flex: 1
   }
 
   .main {
-    flex: none;
+    flex: 1;
     width: 100%;
   }
+.hero,
+.technology,
+.projects,
+.arch,
+.contact,
+.blog {
+  border-radius: 4px;
+}
+.container,
+.main,
+.info,
+.core,
+.additional {
+  gap: 8px;
+}
+
+
 }
 
