@@ -1,0 +1,37 @@
+body {
+  background: var(--color-bg)
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 747px;
+  width: 1068px;
+  background-color: white;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+.core {
+  display: flex;
+  flex-direction: column;
+}
+.additional {
+  display: flex;
+  flex-direction: row;
+}
+
