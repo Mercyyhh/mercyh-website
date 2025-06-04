@@ -2,10 +2,10 @@ import React from 'react';
 import './technology.css';
 
 
-const Technology = () => {
+const Technology = ({Icon}) => {
   return(
-  <div>
-    <h1>T</h1>
+  <div className='icon-container'>
+   <img src={Icon.link} alt={Icon.name}/>
   </div>
   )
 }

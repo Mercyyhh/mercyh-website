@@ -10,7 +10,9 @@ const App = () => {
           <div className='main'>
             <div className='hero'><Hero /></div>
             <div className='info'>
-              <div className='technology'><Technology /></div>
+              <div className='technology'>
+                <Technology Icon={{link:'https://www.flaticon.com/free-icons/html', name:'html'}} />
+              </div>
               <div className='core'>
                 <div className='projects'><Post /></div>
                 <div className='additional'>
