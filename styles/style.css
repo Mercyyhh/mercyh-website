@@ -2,6 +2,7 @@
 
 html {
     font-size: 10pt;
+    font-family: "Space Grotesk";
 }
 
 :root {
@@ -11,6 +12,7 @@ html {
     --bg-1: hsl(0 0 5%);
     --bg-2: hsl(0 0 10%);
     --bg-3: hsl(0 0 15%);
+    --bg-4: hsl(0 0 20%);
     --border-color: hsl(0 0 30%);
 }
 
@@ -30,31 +32,37 @@ main, .container {
 .container {
     background-color: var(--bg-2);
     width: 720px;
-    height: 540px;
+    height: 564px;
     border-radius: 20px;
     border: 1px solid var(--border-color);
 }
 .belt {
     width: 700px;
-    height: 520px;
+    height: 540px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 120px 184px 184px;
+    grid-template-rows: 140px 184px 184px;
     gap: 16px;
 
+}
+@media (max-width: 340px) {
+    .memoji {
+        width: 100px !important;
+        padding-bottom: 20px; 
+    }
 }
 
 @media (max-width: 768px) {
     .belt {
         width: 90vw;
-        height: 90vh;
+        height: 650px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 160px 160px 160px 160px ;
         gap: 3px;
     }
     .container {
         width: 90vw;
-        height: 90vh;
+        height: 650px;
     }
     .card {
         margin: 10px 10px 0px 10px;
@@ -66,8 +74,10 @@ main, .container {
     .card > h2 {
         font-size: 2rem !important;
     }
-    .memoji {
-        width: 140px !important;
+
+    .tech > svg {
+        height: 32px !important;
+        width: 32px !important;
     }
 }
 
@@ -93,7 +103,6 @@ main, .container {
 }
 
 .card > h2 {
-    font-family: "Space Grotesk", sans-serif;
     color: var(--text);
     font-size: 3rem;
     font-weight: bold;
@@ -103,13 +112,12 @@ main, .container {
 }
 .name > p {
     display: inline;
-    font-family: "Space Grotesk";
     font-weight: lighter;
     color: var(--text-mute);
 }
 
 .memoji {
-    width: 100px;
+    width: 140px;
     float: left;
 }
 
@@ -124,4 +132,25 @@ a {
     text-decoration: none;
     font-family: "Space Grotesk";
     color: var(--text-mute);
+}
+
+.tech {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+.tech > svg {
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    background-color: var(--bg-4);
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    fill: var(--text-mute);
+}
+
+.tech :hover {
+    fill: var(--primary-color);
 }
