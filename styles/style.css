@@ -46,14 +46,14 @@ main, .container {
         height: 90vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr ;
-        gap: 2px;
+        gap: 4px;
     }
     .container {
         width: 90vw;
         height: 90vh;
     }
     .card {
-        margin: 12px;
+        margin: 10px 10px 0px 10px;
         grid-column: span 2;
     }
 }
