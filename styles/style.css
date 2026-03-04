@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Major+Mono+Display&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 body {
     background-color: #051923;
 }
@@ -12,10 +14,10 @@ main, .container {
     align-items: center;
 }
 .container {
-    background-color: #003554;
     width: 720px;
     height: 520px;
     border-radius: 20px;
+    border: 2px solid #00A6FB;
 }
 .belt {
     width: 700px;
@@ -40,4 +42,10 @@ main, .container {
     grid-column: span 2;
 }
 
+.name > h2 {
+    font-family: "Major Mono Display", sans-serif;
+    color: #F15946;
+    font-size: 26pt;
+    margin: 10px;
+}
 
