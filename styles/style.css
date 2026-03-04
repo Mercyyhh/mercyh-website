@@ -1,0 +1,43 @@
+body {
+    background-color: #051923;
+}
+
+main { 
+    height: 100vh;
+}
+
+main, .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: #003554;
+    width: 720px;
+    height: 520px;
+    border-radius: 20px;
+}
+.belt {
+    width: 700px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 184px 184px;
+    gap: 16px;
+
+}
+
+.card {
+    border-radius: 16px;
+    border: 2px solid #00A6FB;
+}
+
+.name {
+    grid-column: span 2;
+}
+
+.blog  {
+    grid-column: span 2;
+}
+
+
