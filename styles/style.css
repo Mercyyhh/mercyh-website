@@ -26,21 +26,21 @@ main, .container {
 .container {
     background-color: var(--bg-2);
     width: 720px;
-    height: 520px;
+    height: 540px;
     border-radius: 20px;
     border: 1px solid var(--border-color);
 }
 .belt {
     width: 700px;
-    height: 500px;
+    height: 520px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 184px 184px;
+    grid-template-rows: 120px 184px 184px;
     gap: 16px;
 
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
     .belt {
         width: 90vw;
         height: 90vh;
@@ -56,12 +56,28 @@ main, .container {
         margin: 10px 10px 0px 10px;
         grid-column: span 2;
     }
+    .blog {
+        margin-bottom: 10px;
+    }
+    .card > h2 {
+        font-size: 24pt !important;
+    }
+    .memoji {
+        width: 140px !important;
+    }
 }
 
 .card {
     border-radius: 16px;
     background-color: var(--bg-3);
     border: 1px solid var(--border-color);
+}
+
+.tech, .social, .blog {
+        /* remove after updating*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .name {
@@ -72,7 +88,7 @@ main, .container {
     grid-column: span 2;
 }
 
-.name > h2 {
+.card > h2 {
     font-family: "Space Grotesk", sans-serif;
     color: var(--text);
     font-size: 26pt;
@@ -98,10 +114,9 @@ main, .container {
     height: 15px;
     vertical-align: -3px;
     fill: var(--primary-color);
-    margin-top: 15px;
 }
 
-body > a {
+a {
     text-decoration: none;
     font-family: "Space Grotesk";
     color: var(--text-mute);
