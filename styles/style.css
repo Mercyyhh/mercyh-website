@@ -2,7 +2,6 @@
 
 :root {
     --primary-color: #FF3366;
-    --secondary-color: #D7FCD4;
     --text: hsl(0 0 95%);
     --text-mute: hsl(0 0 80%);
     --bg-1: hsl(0 0 5%);
@@ -100,4 +99,10 @@ main, .container {
     vertical-align: -3px;
     fill: var(--primary-color);
     margin-top: 15px;
+}
+
+body > a {
+    text-decoration: none;
+    font-family: "Space Grotesk";
+    color: var(--text-mute);
 }
