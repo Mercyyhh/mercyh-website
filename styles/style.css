@@ -45,41 +45,7 @@ main, .container {
     gap: 16px;
 
 }
-@media (max-width: 340px) {
-    .memoji {
-        width: 100px !important;
-        padding-bottom: 20px; 
-    }
-}
 
-@media (max-width: 768px) {
-    .belt {
-        width: 90vw;
-        height: 650px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 160px 160px 160px 160px ;
-        gap: 3px;
-    }
-    .container {
-        width: 90vw;
-        height: 650px;
-    }
-    .card {
-        margin: 10px 10px 0px 10px;
-        grid-column: span 2;
-    }
-    .blog {
-        margin-bottom: 10px;
-    }
-    .card > h2 {
-        font-size: 2rem !important;
-    }
-
-    .tech > svg {
-        height: 32px !important;
-        width: 32px !important;
-    }
-}
 
 .card {
     border-radius: 16px;
@@ -153,4 +119,50 @@ a {
 
 .tech :hover {
     fill: var(--primary-color);
+}
+
+
+
+@media (max-width: 768px) {
+    .belt {
+        width: 90vw;
+        height: 570px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 160px 80px 160px 160px ;
+        gap: 3px;
+    }
+    .container {
+        width: 90vw;
+        height: 570px;
+    }
+    .card {
+        margin: 10px 10px 0px 10px;
+        grid-column: span 2;
+    }
+    .blog {
+        margin-bottom: 10px;
+    }
+    .card > h2 {
+        font-size: 2rem;
+    }
+
+    .tech > svg {
+        height: 32px;
+        width: 32px;
+    }
+    .tech {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+    .node {
+        display: none;
+    }
+}
+
+@media (max-width: 340px) {
+    .memoji {
+        width: 100px;
+        padding-bottom: 20px; 
+    }
 }
