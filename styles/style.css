@@ -3,12 +3,16 @@
 :root {
     --primary-color: #FF3366;
     --secondary-color: #D7FCD4;
-    --background-color: #31393C;
-    --border-color: #7D98A1;
+    --text: hsl(0 0 95%);
+    --text-mute: hsl(0 0 80%);
+    --bg-1: hsl(0 0 5%);
+    --bg-2: hsl(0 0 10%);
+    --bg-3: hsl(0 0 15%);
+    --border-color: hsl(0 0 30%);
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--bg-1);
 }
 
 main { 
@@ -21,10 +25,11 @@ main, .container {
     align-items: center;
 }
 .container {
+    background-color: var(--bg-2);
     width: 720px;
     height: 520px;
     border-radius: 20px;
-    border: 4px solid var(--border-color);
+    border: 1px solid var(--border-color);
 }
 .belt {
     width: 700px;
@@ -56,7 +61,8 @@ main, .container {
 
 .card {
     border-radius: 16px;
-    border: 4px solid var(--border-color);
+    background-color: var(--bg-3);
+    border: 1px solid var(--border-color);
 }
 
 .name {
@@ -69,7 +75,7 @@ main, .container {
 
 .name > h2 {
     font-family: "Space Grotesk", sans-serif;
-    color: var(--secondary-color);
+    color: var(--text);
     font-size: 26pt;
     font-weight: bold;
     position: relative;
@@ -80,7 +86,7 @@ main, .container {
     display: inline;
     font-family: "Space Grotesk";
     font-weight: lighter;
-    color: var(--border-color);
+    color: var(--text-mute);
 }
 
 .memoji {
