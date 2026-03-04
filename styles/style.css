@@ -29,6 +29,24 @@ main, .container {
 
 }
 
+@media (max-width: 750px) {
+    .belt {
+        width: 90vw;
+        height: 90vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        gap: 2px;
+    }
+    .container {
+        width: 90vw;
+        height: 90vh;
+    }
+    .card {
+        margin: 12px;
+        grid-column: span 2;
+    }
+}
+
 .card {
     border-radius: 16px;
     border: 2px solid #00A6FB;
