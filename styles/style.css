@@ -46,7 +46,7 @@ main, .container {
         height: 90vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr ;
-        gap: 4px;
+        gap: 3px;
     }
     .container {
         width: 90vw;
